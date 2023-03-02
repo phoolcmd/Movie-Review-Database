@@ -3,7 +3,7 @@ import { query } from "express";
 let movies;
 
 export default class MoviesDAO {
-    static async injectDC(conn){
+    static async injectDB(conn){
         if(movies){
             return;
         }
